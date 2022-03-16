@@ -9,8 +9,8 @@ dht.begin();
 }
 void loop()
 {
-float h = dht.readHumidity(); // Reading Humidity float t = dht.readTemperature();
-Reading Temperature Serial.print("Temperature: "); // Print to serial monitor Serial.print(t);
+float h = dht.readHumidity();t = dht.readTemperature();
+Serial.print("Temperature: "); Serial.print(t);
 Serial.print(" degrees Celcius, Humidity: "); Serial.print(h);
 Serial.println(""); delay(5000);
 }
